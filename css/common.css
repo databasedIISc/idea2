@@ -143,9 +143,97 @@ footer{
   margin-top: 100px;
   background-color: rgb(16, 16, 16);
   text-align: center;
-  padding: 100px 0;
+  padding: 50px 0px 10px 0px;
+  height: auto;
 }
 footer img{
-  max-width: 90%;
-  width: 150px;
+    position: sticky;
+    max-width: 90%;
+    width: 150px;
+}
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 10px;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+#rear_block{
+    position: relative;
+    padding: 20px 0;
+}
+.fa {
+    padding: 10px;
+    font-size: 30px;
+    width: 16px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 50%;
+    border: 1px solid #a0a0a0;
+    color: #a0a0a0;
+    -webkit-text-stroke-width: 0px;
+    -webkit-text-stroke-color: black;
+    transition: 0.3s;
+}
+.fa:hover {
+    border: 1px solid #101010;
+    -webkit-text-stroke-width: 0px;
+    -webkit-text-stroke-color: black;
+}
+.fa-facebook:hover{
+    background: #3B5998;
+    color: white;
+}
+.fa-twitter:hover{
+    background: #55ACEE;
+    color: white;
+}
+.fa-youtube-play:hover {
+    background: #bb0000;
+    color: white;
+}
+#motto{
+    font-family: 'Brush Script MT', cursive, 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+#minimap{
+    width: 150px;
+    max-width: 90%;
+    height: 150px;
+    max-height: 90%;
+}
+#logo {
+
+}
+
+.left{
+    float: left;
+    width: 25%;
+}
+.right {
+    float: right;
+    width: 25%;
+}
+.center{
+    padding: 0 25% 0 25%;
+    width: 50%;
+}
+
+#footer::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@media screen and (max-width: 600px) {
+    .left,.right{
+        width: 90%;
+        float: none;
+        text-align: center;
+    }
 }
