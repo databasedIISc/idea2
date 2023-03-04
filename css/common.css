@@ -51,11 +51,11 @@ nav {
 .nav-list-link {
   text-decoration: none;
   color: white;
-  font-size: 1.5em;
+  font-size: 1.4em;
   display: inline-block;
   height: 60px;
   line-height: 60px;
-  width: 150px;
+  width: 110px;
   text-align: center;
   transition: all 0.3s;
 }
@@ -147,9 +147,7 @@ footer{
   height: auto;
 }
 footer img{
-    position: sticky;
-    max-width: 90%;
-    width: 150px;
+
 }
 .column {
     float: left;
@@ -201,14 +199,15 @@ footer img{
 #motto{
     font-family: 'Brush Script MT', cursive, 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
-#minimap{
-    width: 150px;
+#minimap {
+    width: 200px;
     max-width: 90%;
-    height: 150px;
-    max-height: 90%;
+    height: 200px;
 }
 #logo {
-
+    position: sticky;
+    max-width: 90%;
+    width: 200px;
 }
 
 .left{
@@ -218,10 +217,18 @@ footer img{
 .right {
     float: right;
     width: 25%;
+    vertical-align: central;
 }
 .center{
     padding: 0 25% 0 25%;
     width: 50%;
+}
+
+.link{
+    transition: 0.3s;
+}
+.link:hover{
+    color: #a2a2ff;
 }
 
 #footer::after{
@@ -234,6 +241,6 @@ footer img{
     .left,.right{
         width: 90%;
         float: none;
-        text-align: center;
+        margin: 0 auto;
     }
 }
