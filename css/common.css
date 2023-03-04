@@ -139,6 +139,9 @@ main {
   margin: auto;
   max-width: 1200px;
 }
+#stylized-name{
+    font-size: 1.2em;
+}
 footer{
   margin-top: 100px;
   background-color: rgb(16, 16, 16);
@@ -213,11 +216,12 @@ footer img{
 .left{
     float: left;
     width: 25%;
+    margin: 0 auto;
 }
 .right {
     float: right;
     width: 25%;
-    vertical-align: central;
+    margin: 0 auto;
 }
 .center{
     padding: 0 25% 0 25%;
@@ -227,11 +231,11 @@ footer img{
 .link{
     transition: 0.3s;
 }
-.link:hover{
+.link:hover {
     color: #a2a2ff;
 }
 
-#footer::after{
+footer::after{
     content: "";
     display: table;
     clear: both;
